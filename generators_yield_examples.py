@@ -14,6 +14,7 @@ print(next(gen))
 print(next(gen))
 
 
+
 def generate_sequence(n):
     for i in range(n):
         yield i
@@ -82,3 +83,16 @@ next(receiver)
 receiver.send(None)
 receiver.send("Hello")
 receiver.send("How are you?")
+
+
+print("==============")
+
+def my_generator2():
+
+    yield 10
+    yield 20
+    yield 30
+
+gen2 = my_generator2()
+print(list(gen2))
+print("==============")

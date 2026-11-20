@@ -87,7 +87,7 @@ def formal_greeting2():
     greeting = "Good morning. How are you?"
     def informal_greeting():
         nonlocal greeting
-        greeting= "Hey! What's up?" # modifies the greeting variable in the outer function's scope
+        greeting= "Hey! What's up??" # modifies the greeting variable in the outer function's scope
         print("Greeting in the inner function: ", greeting)
 
     informal_greeting()
@@ -99,9 +99,27 @@ formal_greeting2()
 
 print("================================")
 
+def outer_function():
+    message = "Hello from the outer function!"
+    def inner_function():
+        print("Accessing the message from the outer function:", message)
+    return inner_function()
+
+print("================================")
 
 
 print("================================")
+
+def formal_greeting3():
+    greeting = "Good morning. How are you???"
+    def informal_greeting():
+        greeting= "Hey! What's up???" # modifies the greeting variable in the outer function's scope
+        print("Greeting in the inner function: ", greeting)
+
+    informal_greeting()
+    print("Greeting in the outer function: ", greeting)
+
+formal_greeting3()
 
 
 

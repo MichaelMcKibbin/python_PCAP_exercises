@@ -24,9 +24,9 @@ display_entertaining_message()
 
 
 def emphasise_message(display_message_func):
-        print("****************************************************")
+        print("***********************000*****************************")
         display_message_func()
-        print("****************************************************")
+        print("***********************000*****************************")
 
 emphasise_message(display_important_message)
 
