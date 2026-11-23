@@ -1,3 +1,18 @@
+# In Python, the yield statement is used in a function to make it a generator.
+# A generator is a special type of iterator that allows you to iterate over a sequence of values without storing them all in memory at once.
+# When a generator function is called, it returns a generator object, which can be used to iterate over the values produced by the function.
+
+def fun(n):
+    for i in range(n):
+        yield i
+
+
+for v in fun(5):
+    print(v)
+
+
+
+
 def myGenerator():
     print("First item")
     yield 10
