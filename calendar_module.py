@@ -62,12 +62,7 @@ print("\n#============================")
 
 
 
-print("\n#============================")
-
-
-
-print("\n#============================")
-
-
 # calendar.HTMLCalendar – is used to create HTML calendars;
 print(calendar.HTMLCalendar().formatmonth(2026, 11))
+
+
